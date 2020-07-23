@@ -1,3 +1,4 @@
+const cors = require("cors")
 const express = require("express")
 const mongoose = require("mongoose")
 const passport = require("passport")
@@ -9,9 +10,11 @@ const users = require("./routes/users"),
 
 const dbURI = require("./config/keys").mongoURI
 
+app.use(cors())
+app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-app.use("/", urls)
+app.use("/urls", urls)
 app.use("/users", users)
 
 mongoose
