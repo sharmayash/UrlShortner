@@ -17,6 +17,7 @@ import Dashboard from "./components/Dashboard"
 import NotFound from "./components/NotFound"
 import Login from "./components/auth/Login"
 import Register from "./components/auth/Register"
+import OpenUrlPage from "./components/home/OpenUrlPage"
 
 // check for existing user session / check for tokens
 
@@ -47,6 +48,7 @@ function App() {
             <Route exact path="/" component={Dashboard} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
+            <Route path="/:shortUrl" component={OpenUrlPage} />
             <Route path="" component={NotFound} />
           </Switch>
         </BrowserRouter>
