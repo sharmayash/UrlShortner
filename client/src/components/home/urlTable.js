@@ -157,7 +157,7 @@ export default function UrlTable({ urlObjs }) {
                     className={classes.link}
                     onClick={() => handleClick(row.short)}
                   >
-                    {window.location.href}r/
+                    {window.location.href}
                     {row.short}
                   </span>
                 </TableCell>
