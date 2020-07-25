@@ -48,7 +48,7 @@ function App() {
             <Route exact path="/" component={Dashboard} />
             <Route path="/login" component={Login} />
             <Route path="/register" component={Register} />
-            <Route path="/:shortUrl" component={OpenUrlPage} />
+            <Route path="/r/:shortUrl" component={OpenUrlPage} />
             <Route path="" component={NotFound} />
           </Switch>
         </BrowserRouter>
