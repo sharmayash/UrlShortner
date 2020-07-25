@@ -11,6 +11,7 @@ const users = require("./routes/users"),
 const dbURI = require("./config/keys").mongoURI
 
 app.use(cors())
+app.disable('etag');
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
