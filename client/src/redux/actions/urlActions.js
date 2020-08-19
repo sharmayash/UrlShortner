@@ -3,7 +3,7 @@ import { GET_ERRORS, SEND_NEW_URL, GET_ALL_URLS } from "./types"
 
 export const newUrl = (payload) => (dispatch) => {
   axios
-    .post("/urls/newUrl", payload)
+    .post("/api/urls/newUrl", payload)
     .then((res) => {
       dispatch({
         type: SEND_NEW_URL,
@@ -20,7 +20,7 @@ export const newUrl = (payload) => (dispatch) => {
 
 export const getAllUrls = (userId) => (dispatch) => {
   axios
-    .post("/urls/", { userId: userId })
+    .post("/api/urls/", { userId: userId })
     .then((res) => {
       dispatch({
         type: GET_ALL_URLS,

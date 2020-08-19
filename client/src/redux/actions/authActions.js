@@ -7,7 +7,7 @@ import { GET_ERRORS, SET_CURRENT_USER } from "./types"
 
 export const registerUser = (userData, history) => (dispatch) => {
   axios
-    .post("/users/register", userData)
+    .post("/api/users/register", userData)
     .then(() => {
       history.push("/")
     })
@@ -18,7 +18,7 @@ export const registerUser = (userData, history) => (dispatch) => {
       }
 
       axios
-        .post("/users/login", loginDetail)
+        .post("/api/users/login", loginDetail)
         .then((res) => {
           // get token
           const { token } = res.data
@@ -50,7 +50,7 @@ export const registerUser = (userData, history) => (dispatch) => {
 
 export const loginUser = (userData) => (dispatch) => {
   axios
-    .post("/users/login", userData)
+    .post("/api/users/login", userData)
     .then((res) => {
       // get token
       const { token } = res.data
