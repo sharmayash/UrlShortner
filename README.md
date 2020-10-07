@@ -12,3 +12,7 @@ Run following scripts in root folder
 
 1. For server :- npm run server ( with nodemon )
 2. For client :- npm run client
+
+## Home
+
+![SCREENSHOT](home.png)
