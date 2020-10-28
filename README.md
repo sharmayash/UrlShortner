@@ -1,6 +1,4 @@
-# UrlShortner-MERN
-
-Shrink Your Url and share with anyone.
+# UrlShortner
 
 Run following scripts in root folder
 ### For Installing dependenies :-
